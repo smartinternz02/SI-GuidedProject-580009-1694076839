@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+
+{%block content%}
+
+    
+	<p></p>
+    <footer id="footer">
+
+        <div class="footer-top">
+    
+          <div class="container">
+    
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <a href="#header" class="scrollto footer-logo"><img src="{{ url_for('static', filename= 'img/hero-logo.png')}}" alt=""></a>
+                <h2>Knight Studios</h2>
+                <h3>Prediction Result</h3>
+                <h4>The estimated number of Ad-Views is: <span style="color: #ff0000; font-weight: bold;">{{ prediction_text }}</span></h4>
+              </div>
+            </div>
+            <a href="{{ url_for('index')}}" class="pf">Back to Home</a>
+            
+            </div>
+    
+    
+          </div>
+        </div>
+        </div>
+      </footer>
+
+{%endblock%}
